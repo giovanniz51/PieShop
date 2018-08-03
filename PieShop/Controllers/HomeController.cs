@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PieShop.Models;
+using PieShop.ViewModels;
 
 namespace PieShop.Controllers
 {
@@ -18,9 +19,11 @@ namespace PieShop.Controllers
 
         public IActionResult Index()
         {
-            var piesOfTheWeek = _pieRepository.PiesOfTheWeek;
 
-            return View(piesOfTheWeek);
+            var homeViewModel = new HomeViewModel { PiesOfTheWeek = _pieRepository.PiesOfTheWeek };
+            
+
+            return View(homeViewModel);
         }
     }
 }

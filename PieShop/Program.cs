@@ -27,7 +27,7 @@ namespace PieShop
                 {
                     var context = services.GetRequiredService<AppDbContext>();
                     context.Database.Migrate();
-                    DbInitializer.Seed(services);
+                    
                 }
                 catch (Exception ex)
                 {

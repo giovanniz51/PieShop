@@ -10,8 +10,8 @@ using PieShop.Models;
 namespace PieShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20180730152941_CreatedShoppingCartItem")]
-    partial class CreatedShoppingCartItem
+    [Migration("20180803194849_New2")]
+    partial class New2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

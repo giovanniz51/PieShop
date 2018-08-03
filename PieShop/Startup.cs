@@ -40,7 +40,7 @@ namespace PieShop
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services)
         {
 
             if (env.IsDevelopment())
@@ -53,9 +53,10 @@ namespace PieShop
             app.UseStaticFiles();
             app.UseSession();
             app.UseMvcWithDefaultRoute();
+            var context = services.GetRequiredService<AppDbContext>();
+            DbInitializer.Seed(context);
 
 
-            
         }
     }
 }

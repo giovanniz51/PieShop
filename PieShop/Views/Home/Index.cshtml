@@ -1,8 +1,8 @@
-﻿@model IEnumerable<Pie>
+﻿@model HomeViewModel
 
 @Html.Partial("Carousel");
 
-@foreach (var pie in Model)
+@foreach (var pie in Model.PiesOfTheWeek)
 {
     @Html.Partial("PieOfTheWeekSummary", pie);
 }

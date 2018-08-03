@@ -5,6 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20180730145709_Initial.cs" />
+    <Compile Remove="Migrations\20180730145709_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180730152941_CreatedShoppingCartItem.cs" />
+    <Compile Remove="Migrations\20180730152941_CreatedShoppingCartItem.Designer.cs" />
+    <Compile Remove="Migrations\20180803192604_New.cs" />
+    <Compile Remove="Migrations\20180803192604_New.Designer.cs" />
+    <Compile Remove="Migrations\20180803192648_New.cs" />
+    <Compile Remove="Migrations\20180803192648_New.Designer.cs" />
+    <Compile Remove="Migrations\20180803195024_New3.cs" />
+    <Compile Remove="Migrations\20180803195024_New3.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\bower_components\bootstrap\.bower.json" />
     <Content Include="wwwroot\bower_components\bootstrap\bower.json" />
     <Content Include="wwwroot\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
